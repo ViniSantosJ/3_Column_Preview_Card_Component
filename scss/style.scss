@@ -1,0 +1,38 @@
+@import "variaveis";
+
+/* Reset */
+
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*---------*/
+
+.container {
+  border: 3px solid deeppink;
+
+  display: flex;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+// p {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
