@@ -2,13 +2,7 @@
 
 /* Reset */
 
-body,
-h1,
-h2,
-p,
-ul,
-li,
-a {
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -18,48 +12,98 @@ a {
 body,
 html {
   height: 100%;
-  font-size: 15px;
-  height: 100%;
+  font-size: $font-size;
 }
 
 .container {
-  height: 100%;
+  height: 98.5%;
   background-color: $very-ligh-gray;
-}
-
-.content {
-  border: 3px solid pink;
   display: flex;
-  height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.sedans {
+.content {
+  position: relative;
+  width: 930px;
+  height: 500px;
   display: flex;
-  flex-wrap: wrap;
-  border: 3px solid blue;
-  max-width: 480px;
+  color: $white;
+  h2 {
+    font-family: $font-2;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 40px 0 30px 0;
+  }
+  p {
+    font-family: $font-1;
+    font-weight: normal;
+    margin-bottom: 80px;
+  }
+}
+
+.items {
+  // border: 2px solid tomato;
+  padding: 50px;
+  flex: 1;
+}
+
+.sedans {
+  background-color: $bright-orange;
+  border-top-left-radius: 2%;
+  border-bottom-left-radius: 2%;
 }
 
 .suvs {
-  display: flex;
-  flex-wrap: wrap;
-  border: 3px solid green;
-  max-width: 480px;
+  background-color: $dark-cyan;
 }
 
 .luxury {
-  display: flex;
-  flex-wrap: wrap;
-  border: 3px solid dimgrey;
-  max-width: 480px;
+  background-color: $very-dark-cyan;
+  border-top-right-radius: 2%;
+  border-bottom-right-radius: 2%;
+}
+
+.learn-more {
+  border: 2px solid $white;
+  text-transform: capitalize;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 15px;
+  padding: 15px 30px;
+  background-color: $white;
+  cursor: pointer;
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.sedans .learn-more {
+  color: $bright-orange;
+  &:hover {
+    color: $white;
+  }
+}
+
+.suvs .learn-more {
+  color: $dark-cyan;
+  &:hover {
+    color: $white;
+  }
+}
+
+.luxury .learn-more {
+  color: $very-dark-cyan;
+  &:hover {
+    color: $white;
+  }
 }
 
 /* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
+  background-color: $very-ligh-gray;
   a {
     color: hsl(228, 45%, 44%);
   }

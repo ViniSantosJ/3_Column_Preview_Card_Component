@@ -1,4 +1,6 @@
 /* Cores */
+$white: #fff;
+$black: #000;
 $bright-orange: hsl(31, 77%, 52%);
 $dark-cyan: hsl(184, 100%, 22%);
 $very-dark-cyan: hsl(179, 100%, 13%);
@@ -7,8 +9,8 @@ $very-ligh-gray: hsl(0, 0%, 95%); // backgrounds, headings, buttons
 
 /* Tipografia */
 $font-size: 15px;
-$font-1: "Lexend Deca", Helvetica, Arial, sans-serif;
-$font-2: "Big Shoulders Display", Helvetica, Arial, sans-serif;
+$font-1: "Lexend Deca", monospace;
+$font-2: "Big Shoulders Display", monospace;
 
 /* Layout */
 $container: 1440px;
