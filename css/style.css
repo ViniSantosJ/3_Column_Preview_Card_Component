@@ -113,6 +113,34 @@ html {
   color: #fff;
 }
 
+/* Responsividade */
+@media only screen and (max-width: 475px) {
+  body,
+  html {
+    height: 230vh;
+  }
+  .container {
+    height: 100%;
+  }
+  .content {
+    position: absolute;
+    width: 325px;
+    top: 5%;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sedans {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 0%;
+  }
+  .luxury {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 2%;
+  }
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
