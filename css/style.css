@@ -117,7 +117,7 @@ html {
 @media only screen and (max-width: 475px) {
   body,
   html {
-    height: 230vh;
+    height: 1530px;
   }
   .container {
     height: 100%;
