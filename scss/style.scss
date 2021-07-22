@@ -11,13 +11,14 @@
 
 body,
 html {
+  padding: 0 20px;
   height: 100%;
   font-size: $font-size;
+  background-color: $very-ligh-gray;
 }
 
 .container {
   height: 98.5%;
-  background-color: $very-ligh-gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,7 @@ html {
 }
 
 .items {
-  // border: 2px solid tomato;
+  min-width: 200px;
   padding: 50px;
   flex: 1;
 }
@@ -101,6 +102,36 @@ html {
 
 /* Responsividade */
 
+@media only screen and (min-width: 476px) and (max-width: 846px) {
+  body,
+  html {
+    height: 1460px;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  .content {
+    position: absolute;
+    flex-direction: column;
+    width: 400px;
+    top: 5%;
+    margin-bottom: 10px;
+  }
+
+  .sedans {
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 0%;
+  }
+
+  .luxury {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 2%;
+  }
+}
+
 @media only screen and (max-width: 475px) {
   body,
   html {
@@ -113,11 +144,10 @@ html {
 
   .content {
     position: absolute;
+    flex-direction: column;
     width: 325px;
     top: 5%;
     margin-bottom: 10px;
-    // visibility: hidden;
-    flex-wrap: wrap;
   }
 
   .sedans {
